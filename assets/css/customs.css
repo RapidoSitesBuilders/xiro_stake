@@ -81,28 +81,30 @@ footer > div {
   width: 75%;
   height: 85%;
   outline: 0;
-  border: #2480f0 1px solid;
+  border: #2480f000 1px solid;
 
 }
 
 .modal-content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   pointer-events: auto;
-  /* background-color: #fff; */
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid #00e7ff; /* Neon blue border */
   border-radius: 0.3rem;
   outline: 0;
-  /* margin: 15% auto; */
-  padding: 100px 100px;
-  /* padding: 40px; */
-  /* background: url('../images/transpink-2.png') no-repeat scroll center/cover; */
+  padding: 20px; /* Adjust padding as needed */
+  overflow: hidden; /* Prevent scrolling */
 }
+
+
 
 @media (max-width: 991px) {
   #walletConnectModal {
@@ -114,7 +116,7 @@ footer > div {
     padding: 25px 20px 10px 20px;
     /* height: 78%; */
     position: absolute;
-    border: #2480f0 1px solid;
+    border: #00e7ff 1px solid;
 
   }
 
@@ -133,7 +135,7 @@ footer > div {
 @media (max-width: 575px) {
   .modal-content {
     position: absolute;
-    border: #2480f0 1px solid;
+    border: #00e7ff 1px solid;
   }
 
   .modal-content h2 {
@@ -149,6 +151,15 @@ footer > div {
   }
 }
 @media (max-width: 767px) {
+  .modal-content {
+    width: 80%;
+    padding: 15px;
+    border: #00e7ff 1px solid;
+    position: relative; /* Change to relative for proper positioning */
+    margin-top: 40px; /* Add some top margin */
+    margin-bottom: 40px; /* Add some bottom margin */
+  }
+
   .modal-content .row2 {
     display: flex;
     flex-direction: column;
@@ -157,28 +168,33 @@ footer > div {
 
   .modal-content .row2 div {
     margin: 5px;
-    width: 100%;
+    width: 50%; /* Adjust the width as needed, up to 50% */
+    max-width: 100%; /* Ensure the width doesn't exceed 100% */
+    height: 50%; /* Set height to auto for responsiveness */
+    max-height: 50%; /* Adjust the max-height as needed, up to 50% of the viewport height */
   }
+
   .modal {
     margin-bottom: 10px;
-  }
-  .modal-content {
-    position: absolute;
-    border: #2480f0 1px solid;
   }
 
   .modal-content h2 {
     font-size: 22px;
-    margin-top: -150px;
+    margin-top: 10px; /* Adjust margin as needed */
+    margin-bottom: 10px; /* Add some bottom margin */
   }
+
   .modal-content h4 {
     font-size: 18px;
+    margin-bottom: 10px; /* Add some bottom margin */
   }
 
   .modal-content p {
     font-size: 14px;
+    margin-bottom: 10px; /* Add some bottom margin */
   }
 }
+
 
 .modal-content h2,
 .modal-content h4 {
@@ -191,10 +207,10 @@ footer > div {
 }
 
 .modal-content .col2 {
-  /* width: calc(50% - 2.5px); */
+  margin: 5px auto; /* Center the content horizontally */
+  max-width: 50%; /* Set the maximum width to 50% */
   width: 100%;
   height: 150px;
-  float: left;
   text-align: center;
   padding: 15px;
   background-color: #1a1d20;
@@ -204,7 +220,7 @@ footer > div {
 .mm {
   width: 35px !important;
   height: 35px !important;
-  margin-top: 14px !important;
+  margin-bottom: 5px !important;
 }
 
 .modal-content .sep2 {

@@ -1211,7 +1211,7 @@ aside {
 ----------------------------------------------*/
 /* #region Header */
 header {
-  position: relative;
+  position: fixed;
   z-index: 5;
 }
 
@@ -2349,12 +2349,40 @@ header .navbar-sticky {
   background: url("../images/trio.png") no-repeat scroll top center/cover;
   background-color: #000;
 }
-
+@media (max-width: 768px) {
+  .staking-area .card {
+      background: none; /* Remove the background image on smaller screens */
+  }
+  .staking-area .card::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(../images/trio.png) no-repeat scroll top center/cover;
+      background-size: 50%; /* Adjust the size as needed */
+      z-index: -1;
+  }
+}
 
 @media (max-width: 575px) {
   .staking-area .card {
-    padding: 2.5rem 2rem;
-  }
+    background: none; /* Remove the background image on smaller screens */
+}
+.staking-area .card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/trio.png) no-repeat scroll top center/cover;
+    background-size: 50%; /* Adjust the size as needed */
+    z-index: -1;
+}
   
 }
 
@@ -2367,9 +2395,21 @@ header .navbar-sticky {
 }
 
 @media (max-width: 575px) {
-  .staking-area .card .balance {
-    font-size: 2rem;
-  }
+  .staking-area .card {
+    background: none; /* Remove the background image on smaller screens */
+}
+.staking-area .card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/trio.png) no-repeat scroll top center/cover;
+    background-size: 50%; /* Adjust the size as needed */
+    z-index: -1;
+}
 }
 
 .staking-area .card .staking-tabs .nav-item {
@@ -2388,10 +2428,21 @@ header .navbar-sticky {
 }
 
 @media (max-width: 575px) {
-  .staking-area .card .staking-tabs .tab-link {
-    padding: 12px 18px;
-    font-size: 14px;
-  }
+  .staking-area .card {
+    background: none; /* Remove the background image on smaller screens */
+}
+.staking-area .card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/trio.png) no-repeat scroll top center/cover;
+    background-size: 50%; /* Adjust the size as needed */
+    z-index: -1;
+}
 }
 
 .staking-area .card .staking-tabs .tab-link.active {
