@@ -1,0 +1,303 @@
+/* Toggle button styles */
+#toggle-btn {
+  /* position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px; */
+  line-height: 40px;
+  background: unset;
+  padding-right: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.floating-right {
+  float: right;
+  display: flex;
+}
+
+.floating-right > * {
+  margin-left: 15px;
+}
+
+.fields_array h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+div#particles-js {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+a.active {
+  position: relative;
+  background: #134078;
+}
+
+footer {
+  display: block;
+  /* background: linear-gradient(359.43deg, #0B1D33 11.06%, rgba(11, 29, 51, 0) 99.43%); */
+  color: white;
+  height: 100%;
+}
+
+footer > div {
+  height: 100%;
+}
+
+.footer-social li a {
+  font-size: 15px;
+  line-height: 20px;
+  color: #a4b4c3;
+  position: relative;
+}
+
+@media (max-width: 489px) {
+  .drawer.open {
+    padding-top: 150px;
+  }
+}
+
+/* modal */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 75%;
+  height: 85%;
+  outline: 0;
+  border: #2480f0 1px solid;
+
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  /* background-color: #fff; */
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  /* margin: 15% auto; */
+  padding: 100px 100px;
+  /* padding: 40px; */
+  /* background: url('../images/transpink-2.png') no-repeat scroll center/cover; */
+}
+
+@media (max-width: 991px) {
+  #walletConnectModal {
+    /* height: 50vh; */
+  }
+
+
+  .modal-content {
+    padding: 25px 20px 10px 20px;
+    /* height: 78%; */
+    position: absolute;
+    border: #2480f0 1px solid;
+
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+  }
+  .modal-content h4 {
+    font-size: 18px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-content {
+    position: absolute;
+    border: #2480f0 1px solid;
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+    margin-top: -150px;
+  }
+  .modal-content h4 {
+    font-size: 18px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-content .row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-content .row2 div {
+    margin: 5px;
+    width: 100%;
+  }
+  .modal {
+    margin-bottom: 10px;
+  }
+  .modal-content {
+    position: absolute;
+    border: #2480f0 1px solid;
+  }
+
+  .modal-content h2 {
+    font-size: 22px;
+    margin-top: -150px;
+  }
+  .modal-content h4 {
+    font-size: 18px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+}
+
+.modal-content h2,
+.modal-content h4 {
+  color: #fff;
+  text-align: center;
+}
+.modal-content .row2 {
+  width: 100%;
+  height: 150px;
+}
+
+.modal-content .col2 {
+  /* width: calc(50% - 2.5px); */
+  width: 100%;
+  height: 150px;
+  float: left;
+  text-align: center;
+  padding: 15px;
+  background-color: #1a1d20;
+  padding-top: 23px;
+}
+
+.mm {
+  width: 35px !important;
+  height: 35px !important;
+  margin-top: 14px !important;
+}
+
+.modal-content .sep2 {
+  width: 5px;
+  height: 150px;
+  float: left;
+}
+
+.modal-content .col2:hover {
+  cursor: pointer;
+  background-color: #22262a;
+}
+
+.card-parent {
+  width: 600px;
+  position: relative;
+  color: #5d5d5d;
+}
+
+.card h3 {
+  color: #fff;
+
+}
+
+.staking-area .card {
+  color: #fff;
+}
+.staking-area .card.sides {
+  z-index: 3;
+  position: relative;
+  padding: 3rem;
+  margin: 20px;
+  width: 500px;
+  border-radius: 0px;
+  /* background: url(../images/sneak.jpg)
+    no-repeat scroll top center/cover;
+  background-color: #8966ad;
+  background-size: 35vh;
+  background-attachment: fixed;
+  background-position: 62vw 13vh; */
+}
+
+.card-parent .drop1 {
+  transform: rotate(355deg);
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  z-index: 1;
+  height: 100%;
+  width: 85%;
+  /* background: #816fbe; */
+  background-color: transparent;
+  background-image: linear-gradient(160deg, #203e50 0%, #2e1d36 100%);
+  border-radius: 2rem;
+}
+
+.card-parent .drop2 {
+  transform: rotate(182deg);
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 85%;
+  /* background: #816fbe; */
+  background-color: transparent;
+  background-image: linear-gradient(160deg, #203e50 0%, #2e1d36 100%);
+  border-radius: 2rem;
+}
+
+.card-parent .drop3 {
+  transform: rotate(179deg);
+  position: absolute;
+  top: 19px;
+  left: 26px;
+  z-index: 1;
+  height: 100%;
+  width: 85%;
+  /* background: #816fbe; */
+  background-color: transparent;
+  background-image: linear-gradient(160deg, #203e50 0%, #2e1d36 100%);
+  border-radius: 2rem;
+}
+
+@media (max-width: 767px) {
+  .card-parent {
+    width: unset !important;
+  }
+
+  .staking-area .card.sides {
+    width: unset !important;
+    background-size: 50vw !important;
+    background-position: 40vw 53vh !important;
+    margin: 20px 0;
+  }
+}
