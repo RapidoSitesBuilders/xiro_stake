@@ -1,7 +1,7 @@
 var walletAddress = null, 
     stakingContract = null,
     contract = null,
-    stakingAddress = "0xc1687092415255667D94D2B5BD2E6a7d0a93DE85",
+    stakingAddress = "0x17af4038836E14ffb01A7C373e57dD0F93616705",
     contractAddress = "0x95e052330FFB5831eD2c00144eE5D1AA5f6733E4",
     isMetaMask = true,
     web3 = null,
